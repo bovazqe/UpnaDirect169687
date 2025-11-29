@@ -3,10 +3,10 @@ package upnadirect;
 public class Oferta implements Comparable<Oferta>{
     
     private final String aseguradora;
-    private final int importe;
+    private final double importe;
     private final int comision;
     
-    public Oferta(String aseguradora, int importe, int comision){
+    public Oferta(String aseguradora, double importe, int comision){
         this.aseguradora = aseguradora;
         this.importe = importe;
         this.comision = comision;
@@ -38,7 +38,7 @@ public class Oferta implements Comparable<Oferta>{
         return importe;
     }
 
-    public double getComision() {
+    public int getComision() {
         return comision;
     }
 }
