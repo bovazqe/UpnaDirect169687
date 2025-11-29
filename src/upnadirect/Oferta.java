@@ -1,6 +1,6 @@
 package upnadirect;
 
-public class Oferta implements Comparable<Oferta>{
+public class Oferta {
     
     private final String aseguradora;
     private final double importe;
@@ -11,8 +11,8 @@ public class Oferta implements Comparable<Oferta>{
         this.importe = importe;
         this.comision = comision;
     }
-    
-    public int compareTo(Oferta otraOferta){
+
+    public int comparar(Oferta otraOferta){
         if(this.importe < otraOferta.importe){
             return -1;  // Esta oferta es mejor (menor importe)
         }

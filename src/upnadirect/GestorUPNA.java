@@ -31,7 +31,7 @@ public class GestorUPNA {
         for(int i = 1; i < ofertas.size(); i++){
             Oferta ofertaActual = ofertas.get(i);
             
-            if(ofertaActual.compareTo(mejorOferta) == -1){
+            if(ofertaActual.comparar(mejorOferta) == -1){
                 mejorOferta = ofertaActual;
             }
         }

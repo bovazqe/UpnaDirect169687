@@ -3,12 +3,8 @@ package upnadirect;
 import java.util.Scanner;
 
 public class VistaOferta {
-    private final PresentadorOferta presentador;
+    
     private Scanner scanner = new Scanner(System.in);
-
-    public VistaOferta(PresentadorOferta presentador) {
-        this.presentador = presentador;
-    }
     
     public int solicitarAnoNacimiento(){
         int valor = -1;

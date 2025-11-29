@@ -13,12 +13,12 @@ public class Cliente {
     
     public static boolean esValido(int anoNacimiento){
         int anoActual = Year.now().getValue();
-        return (anoNacimiento > 1900 && anoNacimiento <= anoActual);
+        return anoNacimiento > 1900 && anoNacimiento <= anoActual;
     }
     
     public int calcularEdad(){
         int anoActual = Year.now().getValue();
-        return(anoActual - this.anoNacimiento);
+        return anoActual - this.anoNacimiento;
     }
     
     public int getAnoNacimiento(){

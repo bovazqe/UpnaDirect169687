@@ -32,5 +32,4 @@ public class Mafro implements Aseguradora{
         
         return new Oferta(NOMBRE, importe, comisionRedondeada);
     }
-    
 }

@@ -24,10 +24,9 @@ public class Bien {
         }
         
         if(tipo == TipoBien.VEHICULO){
-            return(valor <= 50000);
-        }
-        if(tipo == TipoBien.VIVIENDA){
-            return(valor >= 50000);
+            return valor <= 50000;
+        } else if (tipo == TipoBien.VIVIENDA){
+            return valor >= 50000;
         }
         
         return false;

@@ -3,13 +3,10 @@ package upnadirect;
 public class PresentadorOferta {
     
     private final GestorUPNA modelo;
-    private VistaOferta vista;
+    private final VistaOferta vista;
     
-    public PresentadorOferta(GestorUPNA modelo){
+    public PresentadorOferta(GestorUPNA modelo, VistaOferta vista){
         this.modelo = modelo;
-    }
-    
-    public void setVista(VistaOferta vista){
         this.vista = vista;
     }
     
