@@ -1,5 +1,7 @@
 package upnadirect;
 
+import java.time.Year;
+
 public class Cliente {
     private final int anoNacimiento;
     private final int salario;
@@ -10,11 +12,13 @@ public class Cliente {
     }
     
     public static boolean esValido(int anoNacimiento){
-        return (anoNacimiento > 1900 && anoNacimiento <= 2025);
+        int anoActual = Year.now().getValue();
+        return (anoNacimiento > 1900 && anoNacimiento <= anoActual);
     }
     
     public int calcularEdad(){
-        return(2025 - this.anoNacimiento);
+        int anoActual = Year.now().getValue();
+        return(anoActual - this.anoNacimiento);
     }
     
     public int getAnoNacimiento(){
