@@ -13,7 +13,7 @@ public class PresentadorOferta {
         this.vista = vista;
     }
     
-    public Oferta procesarNuevaOferta(){
+    public void procesarNuevaOferta(){
         vista.mostrarMensaje("INICIO OFERTA MAS VENTAJOSA");
         
         Cliente cliente = gestionarNuevoCliente();
