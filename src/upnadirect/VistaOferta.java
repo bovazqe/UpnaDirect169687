@@ -48,7 +48,7 @@ public class VistaOferta {
             if(valor < 0){
                 mostrarMensaje("El valor debe ser positivo.");
             }
-        } while(valor <= 0);
+        } while(valor < 0);
         return valor;
     }
     
@@ -66,10 +66,10 @@ public class VistaOferta {
             valor = scanner.nextInt();
             scanner.nextLine();
             
-            if(valor < 0){
+            if(valor <= 0){
                 mostrarMensaje("El valor debe ser positivo.");
             }
-        } while(valor < 0);
+        } while(valor <= 0);
         return valor;
     }
     
@@ -108,7 +108,7 @@ public class VistaOferta {
     
     public void imprimirOferta(Oferta oferta){
         System.out.println("MEJOR OFERTA: ");
-        System.out.printf(" %s | %f | %d \n", oferta.getAseguradora(), oferta.getImporte(), oferta.getComision());
+        System.out.printf(" %s | %.2f | %d \n", oferta.getAseguradora(), oferta.getImporte(), oferta.getComision());
     }
     
     public void mostrarMensaje(String mensaje){
