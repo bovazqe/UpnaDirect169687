@@ -2,8 +2,9 @@ package upnadirect;
 
 public class Adasles implements Aseguradora{
     
-    private static final String NOMBRE = "Adasles";
+    private static final String NOMBRE = "ADASLES";
     
+    @Override
     public Oferta calcularOferta(Cliente cliente, Bien bien){
         
         double importe;

@@ -2,10 +2,11 @@ package upnadirect;
 
 import java.util.Scanner;
 
-public class VistaOferta {
+public class VistaOferta implements IVistaOferta{
     
     private Scanner scanner = new Scanner(System.in);
     
+    @Override
     public int solicitarAnoNacimiento(){
         int valor = -1;
 
@@ -27,6 +28,7 @@ public class VistaOferta {
         return valor;
     }
     
+    @Override
     public int solicitarSalario(){
         int valor = -1;
 
@@ -48,6 +50,7 @@ public class VistaOferta {
         return valor;
     }
     
+    @Override
     public int solicitarValor(){
         int valor = -1;
 
@@ -69,6 +72,7 @@ public class VistaOferta {
         return valor;
     }
     
+    @Override
     public Bien.TipoBien solicitarTipo(){
         int opcion;
         Bien.TipoBien tipo = null;
@@ -102,11 +106,13 @@ public class VistaOferta {
         return tipo;
     }
     
+    @Override
     public void imprimirOferta(Oferta oferta){
         System.out.println("MEJOR OFERTA: ");
-        System.out.printf(" %s | %.2f | %d \n", oferta.getAseguradora(), oferta.getImporte(), oferta.getComision());
+        System.out.printf(" %s | %.0f | %d \n", oferta.getAseguradora(), oferta.getImporte(), oferta.getComision());
     }
     
+    @Override
     public void mostrarMensaje(String mensaje){
         System.out.println(mensaje);
     }

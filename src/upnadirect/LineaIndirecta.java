@@ -2,8 +2,9 @@ package upnadirect;
 
 public class LineaIndirecta implements Aseguradora{
     
-    private static final String NOMBRE = "LineaIndirecta";
+    private static final String NOMBRE = "LINEA INDIRECTA";
     
+    @Override
     public Oferta calcularOferta(Cliente cliente, Bien bien){
         
         double importe;

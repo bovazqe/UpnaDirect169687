@@ -2,8 +2,9 @@ package upnadirect;
 
 public class Mafro implements Aseguradora{
     
-    private static final String NOMBRE = "Mafro";
+    private static final String NOMBRE = "MAFRO";
     
+    @Override
     public Oferta calcularOferta(Cliente cliente, Bien bien){
         
         double importe;
